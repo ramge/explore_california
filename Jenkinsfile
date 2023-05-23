@@ -14,7 +14,7 @@ pipeline{
       steps{
         echo "Testing the application.."
         withGradle(){
-          sh './gradlew -v'
+          sh 'gradle --version'
         }
       }
     }
